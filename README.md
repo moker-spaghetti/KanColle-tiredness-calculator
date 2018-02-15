@@ -1,6 +1,6 @@
 # KanColle-tiredness-calculator
 自分用に作った艦これの疲労度を計算するソフト。  
-URLはこちら：【URL】
+URLはこちら：https://moker-spaghetti.github.io/Kancolle-tiredness-calculator/index.html
 
 ## 使い方
 resetを押すと、自然回復の上限の49に疲労度がセットされます。  
