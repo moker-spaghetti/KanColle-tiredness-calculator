@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div style="text-align: center;">
+	<BUTTON onclick="addTiredness('add',1);">+</BUTTON>
+	<BUTTON onclick="addTiredness('add',-1)">-</BUTTON>
+	<span style="font-size: xx-large;" id="tiredness">49</span>
+	<BUTTON onclick="setTiredness(49);">RESET(49)</BUTTON>
+</div>
+<hr>
+<div style="text-align: center;">
+	<input type="checkbox" checked="checked" id="flagship">flagship(+3)</input><br>
+	<BUTTON onclick="addTiredness('day fight',-3);">day fight(-3)</BUTTON><br>
+	<BUTTON onclick="addTiredness('night fight',-2);">night fight(-2)</BUTTON><br>
+	<BUTTON onclick="addTiredness('MVP',10);">MVP(+10)</BUTTON><br>
+	<div>
+		<BUTTON onclick="resultBtn('S',4);">S(+4)</BUTTON><BUTTON onclick="resultBtn('A',3);">A(+3)</BUTTON><BUTTON onclick="resultBtn('B',2);">B(+2)</BUTTON><BUTTON onclick="resultBtn('C',1);">C(+1)</BUTTON>
+	</div>
+	<button  onclick="addTiredness('backhome',-15);">backhome(-15)</button>
+</div>
+<hr>
+Log:
+<div id="log"></div>
+<script type="text/javascript" src="control.js"></script>
+</body>
+</html>
