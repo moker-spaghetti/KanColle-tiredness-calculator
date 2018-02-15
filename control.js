@@ -19,8 +19,16 @@ function setTiredness(num) {
 }
 
 function addTiredness(message, delta) {
-	var trd = document.getElementById('tiredness');
-	trd.innerHTML = Number(trd.innerHTML) + delta;
+	var trdForm = document.getElementById('tiredness');
+	var tiredness = Number(trdForm.innerHTML) + delta;
+	if (tiredness > 100) {
+		tiredness = 100;
+		message = message + ",over100";
+	} else if (tiredness < 0) {
+		tiredness = 0;
+		message = message + ",under0";
+	}
+	trdForm.innerHTML = tiredness;
 	log(message + "(" + delta + ")");
 }
 
